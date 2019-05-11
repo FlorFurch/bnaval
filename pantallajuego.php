@@ -1,9 +1,30 @@
 <?php
 require_once 'header.php';
+require_once 'clases/Tablero.php';
+
+$tablero= new app\clases\Tablero();
+$dimensiones=$tablero->getDimensiones();
 ?>
 <div class="row">
     <div class="col-md-6">
         <table id="tabla_jugador">
+            <?php
+            for ($fila=0; $fila<$dimensiones[0];$fila++)
+            {
+                echo "<tr>";
+                for ($columna=0; $columna<$dimensiones[1];$columna++)
+            {
+                echo "<td>($fila,$columna)</td>";
+            }
+            echo "</tr>";
+            }
+            ?>
+            
+        </table>
+    </div>
+    
+    <div class="col-md-6">
+         <table id="tabla_jugador">
             <tr>
                 <td>0.0</td>
                 <td>0.1</td>
@@ -53,12 +74,6 @@ require_once 'header.php';
                 <td>5.5</td>
             </tr>
         </table>
-    </div>
-    <div class="col-md-6">
-        <img alt="Batalla Naval" src="img/batalla.png" class="rounded">
-    </div>
-    <div class="col-md-6">
-        <img alt="Batalla Naval" src="img/batalla.png" class="rounded">
     </div>
 </div>
 

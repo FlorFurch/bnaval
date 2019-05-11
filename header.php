@@ -11,8 +11,8 @@
         <meta name="author" content="LayoutIt!">
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
 
     </head>
     <body>
@@ -31,10 +31,10 @@
                 <div class="col-md-12">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Profile</a>
+                            <a class="nav-link" href="pantallajuego.php">Juego</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#">Messages</a>
