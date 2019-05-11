@@ -5,13 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Bootstrap 4, from LayoutIt!</title>
+        <title>Batalla Naval - PWD 2019</title>
 
         <meta name="description" content="Source code generated using layoutit.com">
         <meta name="author" content="LayoutIt!">
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
 
     </head>
     <body>
