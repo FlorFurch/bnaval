@@ -24,55 +24,19 @@ $dimensiones=$tablero->getDimensiones();
     </div>
     
     <div class="col-md-6">
-         <table id="tabla_jugador">
-            <tr>
-                <td>0.0</td>
-                <td>0.1</td>
-                <td>0.2</td>
-                <td>0.3</td>
-                <td>0.4</td>
-                <td>0.5</td>
-            </tr>
-            <tr>
-                <td>1.0</td>
-                <td>1.1</td>
-                <td>1.2</td>
-                <td>1.3</td>
-                <td>1.4</td>
-                <td>1.5</td>
-            </tr>
-            <tr>
-                <td>2.0</td>
-                <td>2.1</td>
-                <td>2.2</td>
-                <td>2.3</td>
-                <td>2.4</td>
-                <td>2.5</td>
-            </tr>
-            <tr>
-                <td>3.0</td>
-                <td>3.1</td>
-                <td>3.2</td>
-                <td>3.3</td>
-                <td>3.4</td>
-                <td>3.5</td>
-            </tr>
-            <tr>
-                <td>4.0</td>
-                <td>4.1</td>
-                <td>4.2</td>
-                <td>4.3</td>
-                <td>4.4</td>
-                <td>4.5</td>
-            </tr>
-            <tr>
-                <td>5.0</td>
-                <td>5.1</td>
-                <td>5.2</td>
-                <td>5.3</td>
-                <td>5.4</td>
-                <td>5.5</td>
-            </tr>
+         <table id="tabla_oponente">
+            <?php
+            for ($fila=0; $fila<$dimensiones[0];$fila++)
+            {
+                echo "<tr>";
+                for ($columna=0; $columna<$dimensiones[1];$columna++)
+            {
+                echo "<td>($fila,$columna)</td>";
+            }
+            echo "</tr>";
+            }
+            ?>
+            
         </table>
     </div>
 </div>

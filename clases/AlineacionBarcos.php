@@ -15,7 +15,7 @@ namespace app\clases;
  */
 class AlineacionBarcos {
     //put your code here
-    private $alineacionesPosibles=['Horizontal','Vetical'];
+    private $alineacionesPosibles=['Horizontal','Vertical'];
     public function getAlineacionesPosibles(): array{
         return $this->alineacionesPosibles;
     }
