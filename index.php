@@ -161,17 +161,19 @@ $dimensiones=$tablero->getDimensiones();
         </form>
     </div>
     <div class="col-md-6">
-        <pre>
-            <?php var_dump($_POST); ?>
-        </pre>
-        <table id="tabla_jugador_preview" >
+       
+        <table id="tabla_jugador_preview">
             <?php
+            $letrasFilas=$tablero->getLetras();
+            $tablero->setearConfiguracion($_POST);
             for ($fila=0; $fila<$dimensiones[0];$fila++)
             {
                 echo "<tr>";
                 for ($columna=0; $columna<$dimensiones[1];$columna++)
             {
-                echo "<td>($fila,$columna)</td>";
+                    $columnaReal=$columna+1;
+                    $conbarco=$tablero->tieneBarco($fila, $columna)?'con_barco':'';
+                echo "<td class='$conbarco'>({$letrasFilas[$fila]},$columnaReal)</td>";
             }
             echo "</tr>";
             }
